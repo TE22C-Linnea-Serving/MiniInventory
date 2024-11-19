@@ -1,13 +1,11 @@
 public class Consumable extends Item {
-    public String name;
     public int usesMax;
-    public int usesCurrent;
+    public int usesCurrent = 0;
 
     //Constructor
-    public Consumable(String name, int usesMax, int usesCurrent) {
+    public Consumable(String name, int usesMax) {
         this.name = name;
         this.usesMax = usesMax;
-        this.usesCurrent = usesCurrent;
     }
 
     //Method

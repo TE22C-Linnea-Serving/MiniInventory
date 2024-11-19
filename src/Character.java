@@ -7,7 +7,7 @@ public class Character {
 
     public Character() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("What is your name?");
+        System.out.println("What do you want to name the character?");
         name = sc.nextLine();
         backpack = new Inventory();
 

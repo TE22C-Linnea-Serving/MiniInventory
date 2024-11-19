@@ -1,7 +1,6 @@
 import java.util.Random;
 
 public class Weapon extends Item {
-    public String name;
     public int minDamage;
     public int maxDamage;
     private Random generator = new Random();
@@ -13,9 +12,6 @@ public class Weapon extends Item {
         this.maxDamage = maxDamage;
     }
 
-    public String getNameWeapon() {
-        return name;
-    }
 
     public int attack() {
         Random gen = new Random();
