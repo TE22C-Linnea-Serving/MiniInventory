@@ -19,5 +19,20 @@ public class InventoryMain {
             System.out.println(player.name + " leaves the helmet...");
         }
         player.backpack.display();
+        System.out.println("\n" + player.name + " continues walking");
+        System.out.println("\n" + player.name + " found a chest!");
+        System.out.println("Choose one of the following options:");
+        System.out.println("\n1. Steel Sword\n2. Mysterious Soup\n3. Boots");
+        int option = sc.nextInt();
+        if (option == 1) {
+            player.backpack.items.add(new Weapon("Steel Sword", 8, 18));
+        } else if (option == 2) {
+            player.backpack.items.add(new Consumable("Mysterious Soup", 10));
+        } else if (option == 3) {
+            player.backpack.items.add(new Armor("Boots", 3));
+        } else {
+            System.out.println("Invalid option!");
+        }
+        player.backpack.display();
     }
 }
